@@ -12,13 +12,13 @@ For this thesis, we will study the initial conditions of ANNs (i.e., before trai
 characterize the propensity of decision boundaries to form around a certain region of the
 input domain. For complex problems like the classification of objects in natural images,
 state of the art ANNs use inputs that range between 3000 and 300000 dimensions while
-optimizing architectures that contain 1 to well over 100 million parameters. 
-
-
-We will leverage the lower dimensionality of the input space (with respect to the parameter space)
-and perform a simulated optimization on x instead of θ . In other words, study f by
-analyzing the evolution of x when the cost function operates on it i.e., for a cost
-function C , optimize based on δC/ δ x instead of the usual δ δC θ using SGD for example.
+optimizing architectures that contain 1 to well over 100 million parameters. We will leverage the lower
+dimensionality of the input space (with respect to the parameter space) and perform a simulated optimization 
+on x instead of θ. In other words, study f by analyzing the evolution of x when the cost function operates on 
+it i.e., for a cost function C , optimize based on δC/ δ x instead of the usual δ δC θ using SGD for example.
 
 Due to the end-to-end differentiable nature of these models, properties found on the input
-space describe analogous features of the parameter space.
+space describe analogous features of the parameter space.For the particular case of image classification, 
+optimization takes place though a discrete sampling of the input space, for which the ground truth is known 
+i.e., pairs ⟨xi , yi⟩ where f(xi, θ)=yi . Said discrete sample can be model as a particle system whose movement
+is described by the optimization function.
