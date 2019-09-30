@@ -15,7 +15,7 @@ state of the art ANNs use inputs that range between 3000 and 300000 dimensions w
 optimizing architectures that contain 1 to well over 100 million parameters. We will leverage the lower
 dimensionality of the input space (with respect to the parameter space) and perform a simulated optimization 
 on x instead of θ. In other words, study f by analyzing the evolution of x when the cost function operates on 
-it i.e., for a cost function C , optimize based on δC/ δ x instead of the usual δ δC θ using SGD for example.
+it i.e., for a cost function C , optimize based on δC/δ x instead of the usual δC/δθ using SGD for example.
 
 Due to the end-to-end differentiable nature of these models, properties found on the input
 space describe analogous features of the parameter space.For the particular case of image classification, 
